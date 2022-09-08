@@ -1,8 +1,8 @@
 # include <stdio.h>
-/* this is a code for put
- *betty comment style
- *betty
- */
+/** this is a code for put
+*betty comment style
+*betty
+*/
 
 
 int main(void)
