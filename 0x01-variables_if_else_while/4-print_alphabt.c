@@ -12,7 +12,7 @@
 int main(void)
 {
 char c;
-for (c = 'a'; (((c <= 'z') && ((c != 'e') || (c != 'q'))); ++c)
+for (c = 'a'; (c <= 'z') && ((c != 'e') || (c != 'q')); ++c)
 putchar(c);
 {
 putchar('\n');
