@@ -1,4 +1,4 @@
-#include <stdlib.h>
+g#include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 /**
@@ -12,7 +12,10 @@
 int main(void)
 {
 char c;
-for (c = 'a'; ((c <= 'z') && !(c == 'e')) && ((c <= 'z') && !(c == 'q')); ++c)
+for (c = 'a'; c <= 'z'; ++c)
+{
+if (c != 'q' && c != 'e')
+}   
 putchar(c);
 {
 putchar('\n');
