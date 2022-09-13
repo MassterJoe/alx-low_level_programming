@@ -1,19 +1,25 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
-#include <main.h>
+#include <_putchar.h>
 /**
 *main - Entry point
 *
-*Description - This program will assign a random number
-*to the variable n each time it is executed
+*Description - This program prints _putchar followed by a new line
 *
 *Return: Always 0 (success)
 */
+
 int main(void)
 {
-
-char ch = '_putchar'
-putchar(ch);
+char *ch = "_putchar";
+ 
+while(*ch)
+{
+_putchar(*ch);
+ch++;
+}
+ 
+{
+_putchar('\n');
+}
 return (0);
 }
+
