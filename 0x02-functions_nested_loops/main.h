@@ -1,1 +1,1 @@
-char *ch = '_putchar';
+char *ch = "_putchar";
