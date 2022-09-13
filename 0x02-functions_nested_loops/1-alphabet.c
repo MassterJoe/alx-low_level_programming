@@ -1,7 +1,6 @@
 #include "main.h"
 /**
 *main - Entry point
-*@print_alphabet(): prints alphsbets in lower case
 *@int : integer
 *@_putchar() : for printing
 *@print_alphabet() : for printing alphabet
@@ -18,8 +17,8 @@ _putchar(n);
 }
 _putchar('\n');
 }
-void print_alphabet(void);
 int main(void)
+void print_alphabet(void);
 {
 print_alphabet();
 return (0);
