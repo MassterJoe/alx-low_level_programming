@@ -6,7 +6,7 @@
 *
 *Return: Always 0 (success)
 */
-int _putchar(char *)
+_putchar(char *)
 {
 return (0);
 }
