@@ -1,5 +1,6 @@
 #include "main.h"
 /**
+*main - Entry point
 *print_alphabet -  prints alphsbets in lower case
 *
 *Return: Always 0 (Succes)
@@ -12,4 +13,9 @@ for (n = 'a'; n <= 'z'; n++)
 _putchar(n);
 }
 _putchar('\n');
+}
+int main(void)
+{
+print_alphabet();
+return (0);
 }
