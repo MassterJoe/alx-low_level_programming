@@ -2,7 +2,8 @@
 /**
 **main - Entry point
 *
-*char - description, its a character type
+*@char : description, its a character type
+*@_putchar() : is a funcyion
 *Return: Always 0 (success)
 *
 */
