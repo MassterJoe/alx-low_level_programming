@@ -1,1 +1,2 @@
 char *ch;
+int n;
