@@ -3,11 +3,11 @@
 *main - Entry point
 *
 *Description - This program prints _putchar followed by a new line
-*char : character type
-*_putchar is a functon
+*
 *Return: Always 0 (success)
+*
 */
-char _putchar(x);
+char _putchar(char);
 int main(void)
 {
 char *ch = "_putchar";
