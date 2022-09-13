@@ -6,7 +6,6 @@
 *
 *Return: Always 0 (success)
 */
-_putchar(char *)
 {
 return (0);
 }
