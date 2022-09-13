@@ -1,9 +1,10 @@
 #include "main.h"
 /**
-*Description -  prints alphsbets in lower case
+*print_alphabet -  prints alphsbets in lower case
 *
 *Return: Always 0 (Succes)
 */
+char _putchar(n);
 void print_alphabet(void)
 {
 int n;
