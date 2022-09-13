@@ -6,7 +6,7 @@
 *
 *Return: Always 0 (success)
 */
-int _putchar();
+int _putchar(void);
 int main(void)
 {
 char *ch = "_putchar";
