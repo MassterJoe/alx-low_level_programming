@@ -1,5 +1,4 @@
-#include <0-putchar.c>
-#include <main.h.>
+#include <_putchar.h>
 /**
 *main - Entry point
 *
@@ -7,20 +6,16 @@
 *
 *Return: Always 0 (success)
 */
-
 int main(void)
 {
 char *ch = "_putchar";
- 
-while(*ch)
+while (*ch)
 {
 _putchar(*ch);
 ch++;
 }
- 
 {
 _putchar('\n');
 }
 return (0);
 }
-
