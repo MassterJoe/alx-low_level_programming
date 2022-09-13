@@ -1,12 +1,12 @@
 #include "main.h"
 /**
-*main - Entry point
+**main - Entry point
 *
-*Description - This program prints _putchar followed by a new line
-*
+*char - description, its a character type
 *Return: Always 0 (success)
 *
 */
+
 char _putchar(char);
 int main(void)
 {
