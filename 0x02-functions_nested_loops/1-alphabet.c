@@ -1,4 +1,4 @@
-r#include "main.h"
+#include "main.h"
 /**
 *main - Entry point
 *@n : integer
