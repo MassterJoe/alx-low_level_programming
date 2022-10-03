@@ -1,0 +1,101 @@
+Skip to content
+NwabuezeFranklin
+/
+alx-low_level_programming
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+alx-low_level_programming/0x0B-malloc_free/1-strdup.c
+@NwabuezeFranklin
+NwabuezeFranklin Write a function that returns a pointer to a newly allocated space in…
+…
+ 1 contributor
+68 lines (55 sloc)  761 Bytes
+#include "main.h"
+/**
+ *_strlen - count array
+ *@s: array of elements
+ *Return: 1
+ */
+
+  int _strlen(char *s)
+{
+  unsigned int i;
+
+  i = 0;
+  while (s[i] != '\0') /*count character of string*/
+    {
+      i++;
+    }
+
+  return (i);
+}
+
+/**
+ *_strcpy - copy arrays
+ *@src: array of elements
+ *@dest: dest array
+ *Return: dest
+ */
+
+char *_strcpy(char *dest, char *src)
+{
+  int i = 0;
+
+  while (src[i] != '\0')
+    {
+      dest[i] = src[i];
+      i++;
+    }
+  dest[i] = '\0';
+
+  return (dest);
+}
+
+/**
+ *_strdup - array for prints a string
+ *@str: array of elements
+ *Return: pointer
+ */
+
+char *_strdup(char *str)
+{
+  char *dst;
+  unsigned int size;
+
+  if (str == 0)
+    {
+      return (NULL);
+    }
+
+  size = _strlen(str) + 1;
+
+  dst = (char *) malloc(size *sizeof(char));
+
+  if (dst == 0)
+    {
+      return (NULL);
+    }
+  _strcpy(dst, str);
+  return (dst);
+}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+alx-low_level_programming/1-strdup.c at main · NwabuezeFranklin/alx-low_level_programming

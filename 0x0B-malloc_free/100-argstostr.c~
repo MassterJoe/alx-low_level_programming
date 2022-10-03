@@ -1,0 +1,75 @@
+Skip to content
+NwabuezeFranklin
+/
+alx-low_level_programming
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+alx-low_level_programming/0x0B-malloc_free/100-argstostr.c
+@NwabuezeFranklin
+NwabuezeFranklin Write a function that concatenates all the arguments of your program
+ 1 contributor
+43 lines (41 sloc)  623 Bytes
+#include "main.h"
+/**
+ * argstostr - prints args
+ * @ac: takes in width of grid
+ * @av: height of grid
+ * Return: the args one line at a time
+ */
+
+  char *argstostr(int ac, char **av)
+{
+  char *str;
+  int count = 0, a = 0, b = 0, c = 0;
+
+  if (ac == 0 || av == NULL)
+    return (NULL);
+  while (a < ac)
+    {
+      b = 0;
+      while (av[a][b] != '\0')
+	{
+	  count++;
+	  b++;
+	}
+      a++;
+    }
+  count = count + ac + 1;
+  str = malloc(sizeof(char) * count);
+  if (str == NULL)
+    {
+      return (NULL);
+    }
+  for (a = 0; a < ac; a++)
+    {
+      for (b = 0; av[a][b] != '\0'; b++)
+	{
+	  str[c] = av[a][b];
+	  c++;
+	}
+      str[c] = '\n';
+      c++;
+    }
+  return (str);
+}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+alx-low_level_programming/100-argstostr.c at main · NwabuezeFranklin/alx-low_level_programming

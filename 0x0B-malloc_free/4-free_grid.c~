@@ -1,0 +1,52 @@
+Skip to content
+NwabuezeFranklin
+/
+alx-low_level_programming
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+alx-low_level_programming/0x0B-malloc_free/4-free_grid.c
+@NwabuezeFranklin
+NwabuezeFranklin Write a function that frees a 2 dimensional grid previously created b…
+…
+ 1 contributor
+19 lines (16 sloc)  286 Bytes
+#include "main.h"
+/**
+ * free_grid - allocates a grid, make space and free space
+ * @grid: takes in width of grid
+ * @height: height of grid
+ * Return: free grid
+ */
+
+  void free_grid(int **grid, int height)
+{
+  int i;
+
+  for (i = 0; i < height; i++)
+    {
+      free(grid[i]);
+    }
+
+  free(grid);
+}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+alx-low_level_programming/4-free_grid.c at main · NwabuezeFranklin/alx-low_level_programming
